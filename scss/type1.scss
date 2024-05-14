@@ -1,58 +1,58 @@
-$menumg : 1rem;
+// $menumg : 1rem;
 
-#hd{
-    padding: 10px 35px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    h1{
-        a{
-            img{
+// #hd{
+//     padding: 10px 35px;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid #ddd;
+//     h1{
+//         a{
+//             img{
 
-            }
-        }
-    }
-    li{
-        margin-left: $menumg;
-    }
-    .gnb{
-        display: flex;
-        margin-right: auto;
-        margin-left: 1rem;
-        li{
+//             }
+//         }
+//     }
+//     li{
+//         margin-left: $menumg;
+//     }
+//     .gnb{
+//         display: flex;
+//         margin-right: auto;
+//         margin-left: 1rem;
+//         li{
             
-            a{
+//             a{
 
-            }
-        }
-    }
-    .iconMenu{
-        display: flex;
+//             }
+//         }
+//     }
+//     .iconMenu{
+//         display: flex;
         
-        li{
+//         li{
             
-            i{
+//             i{
 
-            }
-            span{
-                // 접근성 지키는 방법
-                position: absolute;
-                width: 0;
-                height: 0;
-                display: block;
-                overflow: hidden;
-                opacity: 0;
-            }
-        }
-    }
-    .member{
-        display: flex;
+//             }
+//             span{
+//                 // 접근성 지키는 방법
+//                 position: absolute;
+//                 width: 0;
+//                 height: 0;
+//                 display: block;
+//                 overflow: hidden;
+//                 opacity: 0;
+//             }
+//         }
+//     }
+//     .member{
+//         display: flex;
         
-        li{
+//         li{
             
-            a{
+//             a{
 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
