@@ -61,7 +61,14 @@
     
     .gnb{ 
         .d1{
+            // 대메뉴 li
+            &:hover{
+                ul{
+                    display: block;
+                }
+            }
             .gnb_d1_a{
+                // 대메뉴a
                 font-size: 1.2em;
                 color: black;
             }
@@ -70,6 +77,7 @@
                 min-width: 80px;
                 white-space: nowrap;
                 background-color: black !important;
+                display: none;
                 &.leftul{
                     left: -2rem;
                 }
