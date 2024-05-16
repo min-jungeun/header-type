@@ -1,7 +1,38 @@
+#hd {
+  background-color: #FFEBB7;
+}
 #hd a {
   text-decoration: none;
   color: #333333;
 }
-#hd .gnb li a {
+#hd .gnb ul {
+  top: 100%;
+  font-size: 0.9em;
+  white-space: nowrap;
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  min-width: 100px;
+  text-align: center;
+}
+#hd .gnb ul.left {
+  left: -15px !important;
+}
+#hd .gnb ul.event {
+  left: -25px !important;
+  min-width: 108px;
+}
+#hd .gnb ul.reservation {
+  left: -10px !important;
+  min-width: 115px;
+}
+#hd .gnb .d1 > a {
   font-weight: bold;
+}
+#hd .gnb .d1:hover ul {
+  max-height: 180px !important;
+}
+#hd .gnb .d1 li:hover > a {
+  font-weight: bold;
+  text-decoration: underline;
 }

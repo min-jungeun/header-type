@@ -1,9 +1,49 @@
 #hd{
+    background-color: #FFEBB7;
     a{
         text-decoration: none;
         color: #333333;
     }
-    .gnb li a{
-        font-weight: bold;
+    .gnb{
+
+        ul{
+            top: 100%;
+            font-size: 0.9em;
+            white-space: nowrap;
+            max-height: 0;
+            transition: max-height 0.5s;
+            overflow: hidden;
+            min-width: 100px;
+            text-align: center;
+            &.left{
+                left: -15px !important;
+            }
+            &.event{
+                left: -25px !important;
+                min-width: 108px;
+            }
+            &.reservation{
+                left: -10px !important;
+                min-width: 115px;
+            }
+        }
+        .d1{
+           > a{
+                font-weight: bold;
+            }
+            &:hover{
+                ul{
+                    max-height: 180px !important;
+                }
+            }
+            li:hover{
+                > a{
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+           
+        }    
     }
+    
 }
