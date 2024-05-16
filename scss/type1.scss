@@ -58,13 +58,16 @@
 // }
 
 #hd{
-    
+    a{
+        text-decoration: none;
+    }
     .gnb{ 
         .d1{
             // 대메뉴 li
             &:hover{
+                // 대메뉴의 롤오버시 소메뉴 노출
                 ul{
-                    display: block;
+                    height: 180px;
                 }
             }
             .gnb_d1_a{
@@ -77,7 +80,12 @@
                 min-width: 80px;
                 white-space: nowrap;
                 background-color: black !important;
-                display: none;
+                height: 0;
+                transition: height 0.5s;
+                overflow: hidden;
+                padding: 0 1rem !important;
+                border: 0 !important;
+
                 &.leftul{
                     left: -2rem;
                 }
@@ -89,9 +97,5 @@
                 }
             }
         }
-    }
-
-    a{
-        text-decoration: none;
     }
 }
