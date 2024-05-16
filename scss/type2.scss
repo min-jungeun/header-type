@@ -27,13 +27,16 @@
 // }
 
 .gnb{
+    a;:hover{
+        color: red !important;
+    }
     &:hover{
         ul{
             height: 180px;
         }
     }
-    li:hover{
-        a{
+    > li:hover{
+        >   a{
             color: red;
         }
     }
