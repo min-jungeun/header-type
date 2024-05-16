@@ -25,3 +25,23 @@
 //     overflow: hidden;
 //     opacity: 0;
 // }
+
+.gnb{
+    &:hover{
+        ul{
+            height: 180px;
+        }
+    }
+    li:hover{
+        a{
+            color: red;
+        }
+    }
+    ul{
+        top: 100%;
+        min-width: 120px;  // 마지노선을 넣어줘야한다.
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    }
