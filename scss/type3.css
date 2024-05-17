@@ -14,7 +14,13 @@
 }
 #hd .gnb .gnb_li:hover .gnb_ul {
   max-height: 180px;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #ccc;
+  transition: border-rasius 0.5s ease;
   border-radius: 0 0 30px 30px;
+}
+#hd .gnb .gnb_li:hover .gnb_ul:after {
+  transition: 0.5s;
 }
 #hd .gnb .gnb_li .gnb_a {
   font-size: 1.2rem;
@@ -33,13 +39,9 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.5s;
-  transition-delay: 1s;
 }
 #hd .gnb .gnb_li .gnb_ul:after, #hd .gnb .gnb_li .gnb_ul:before {
   content: "";
   display: block;
   height: 1rem;
-}
-#hd .gnb .gnb_li .gnb_ul:after {
-  border-bottom: 1px solid #ccc;
 }

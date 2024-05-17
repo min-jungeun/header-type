@@ -22,8 +22,15 @@
                     color: red; // 활성화
                 } 
                 .gnb_ul{
-                    max-height: 180px;
+                    max-height: 180px;     // 각각의 소메뉴 사이즈가 다르므로 height로 진행불가 
+                    padding: 0 1.5rem;
+                    border-bottom: 1px solid #ccc;
+                    transition: border-rasius 0.5s ease;
                     border-radius: 0 0 30px 30px;
+
+                    &:after{
+                        transition: 0.5s;
+                    }
                 }  
             }
             .gnb_a{
@@ -46,7 +53,7 @@
                 max-height: 0;
                 overflow: hidden;
                 transition: 0.5s;
-                transition-delay: 1s;
+                // transition-delay: 1s; 1초 뒤에 나오기
     
     
     
@@ -57,7 +64,7 @@
                     height: 1rem;
                 }
                 &:after{
-                    border-bottom: 1px solid #ccc;
+                    // border-bottom: 1px solid #ccc;
                 }
                 
             }
